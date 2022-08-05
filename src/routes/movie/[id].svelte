@@ -44,6 +44,11 @@
   }
 </script>
 
+<svelte:head>
+  <title>{movieDetail.title}</title>
+  <meta property="og:description" content={movieDetail.overview}>
+</svelte:head>
+
 <div class="movie-details" in:fly={{ y: 50, duration: 500, delay: 500 }} out:fly={{ duration: 500 }}>
   <div class="img-container">
     <img
@@ -56,7 +61,7 @@
     <p class="overview">{movieDetail.overview}</p>
     <p>
       <span>출시일:</span> {movieDetail.release_date} <br />
-      <span>예산:</span> {geKoreanNumber(movieDetail.budget)}원 <br /> <!-- TODO: 단위 추가하기 -->
+      <span>예산:</span> {geKoreanNumber(movieDetail.budget)}원 <br />
       <span>평점:</span> {movieDetail.vote_average}점 <br />
       <span>상영 시간:</span> {movieDetail.runtime}분
     </p>
