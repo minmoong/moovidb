@@ -34,6 +34,7 @@
     name="search_movie"
     type="text"
     class:selected={active}
+    autocomplete="off"
   />
   {#if value}
     <button
@@ -47,15 +48,22 @@
 <style>
   .search {
     position: relative;
-    width: 30%;
-    margin: 1rem;
+    width: 40%;
+    margin: 0 auto 40px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+  }
+
+  @media (max-width: 720px) {
+    .search {
+      width: 90%;
+    }
   }
 
   button {
-    font-size: 0.7rem;
+    font-size: 1rem;
     padding: 0rem 1rem;
-    background: rgb(96, 110, 201);
-    color: white;
+    background: #fff;
+    color: rgb(63, 63, 63);
     font-weight: bold;
     border: none;
     position: absolute;
@@ -71,29 +79,28 @@
   input {
     width: 100%;
     border: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     outline: none;
-    color: rgb(255, 255, 255);
+    color: #fff;
     padding: 0.5rem 0.1rem;
     transition: background 0.75s ease-out;
-    font-weight: bold;
-    background: rgb(63, 63, 63);
+    background: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 1rem;
   }
 
   label {
     position: absolute;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     top: 50%;
     left: 0;
     transform: translate(0, -50%);
     pointer-events: none;
-    color: #fff;
+    color: #000;
     padding: 0rem 1rem;
   }
 
   input.selected {
-    background: rgb(50, 50, 50);
+    background:rgb(63, 63, 63);
   }
 </style>

@@ -13,6 +13,7 @@
 <style>
   h3 {
     padding: 0 1rem;
+    font-size: calc(1em + 1vw);
   }
 
   .popular-movies {
