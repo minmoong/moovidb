@@ -26,6 +26,10 @@
   export let searchedMovie: Movie[];
 </script>
 
+<svelte:head>
+  <title>무비디비 - 검색</title>
+</svelte:head>
+
 <div class="searched-movies">
   {#each searchedMovie as movie}
     <MovieCard {movie} />
