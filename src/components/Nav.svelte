@@ -1,5 +1,9 @@
+<script>
+  import Ripple from '@smui/ripple';
+</script>
+
 <nav>
-  <a href="/">무비디비</a>
+  <a href="/" use:Ripple={{ surface: true }}>Movie Database</a>
 </nav>
 
 <style>
@@ -11,9 +15,10 @@
   }
 
   a {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: black;
     text-decoration: none;
+    padding: 20px;
+    border-radius: 13px;
   }
 </style>
