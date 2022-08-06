@@ -1,38 +1,8 @@
-# create-svelte
+# Moovidb
+그럴싸한 영화 추천&검색 서비스!
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+![캡처](https://user-images.githubusercontent.com/62737839/183240345-984d133d-8955-45e8-a932-0131ae15ecf7.PNG)
+![캡처2](https://user-images.githubusercontent.com/62737839/183240348-68cacea8-6d05-4c26-afc4-0af897ada7e2.PNG)
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+### 서비스 이용방법
+> [moovidb](https://moovidb-minmoong.vercel.app) 에 배포되어 있습니다!
