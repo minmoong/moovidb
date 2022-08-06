@@ -1,3 +1,9 @@
+<div align="center">
+
+  ![waving](https://capsule-render.vercel.app/api?type=waving&height=250&text=Moovidb&fontAlignY=40&color=gradient)
+
+</div>
+
 # Moovidb
 그럴싸한 영화 추천&검색 서비스!
 
